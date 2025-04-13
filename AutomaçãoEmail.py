@@ -34,7 +34,6 @@ def enviar_email():
         mensagem["to"] = destinatario
         mensagem["subject"] = assunto
         mensagem.attach(MIMEText(corpo, 'plain'))
-
         #Protocolo de envio:
         servidor = smtplib.SMTP("smtp.gmail.com", 587)
         servidor.starttls() #Entra no servidor;
